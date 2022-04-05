@@ -1,0 +1,184 @@
+/* Skip links */
+#skip-links {
+    position: absolute;
+    left: -100rem;
+    top: -100rem;
+    padding: 0.5rem;
+}
+
+#skip-links>a {
+    padding: 0.3rem;
+}
+
+#skip-links:focus-within {
+    left: 0;
+    top: 0;
+    background-color: white;
+
+    border: 3px solid orange;
+}
+
+/* Règles générales sur éléments */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 65vw;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: white;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+img {
+    max-width: 95%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    padding: 0.3rem;
+}
+
+fieldset {
+    border: solid purple 0.1rem;
+    margin: 0.5rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* Utilitaires */
+.reset-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-column-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Règles relatives à la page */
+/* En tête */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(gainsboro, white);
+}
+
+ul>li {
+    background-color: white;
+    color: purple;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    text-align: center;
+
+    border: 0.2rem solid purple;
+    border-radius: 0.3rem;
+}
+
+/* Contenu principal */
+main {
+ width: 90%;
+ margin: auto;
+}
+
+#old-lady-img {
+    max-width: 45%;
+}
+
+#a-vos-cotes-block {
+    max-width: 45%;
+}
+
+.avocat {
+    border: 2px solid purple;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.avocat>img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 60%;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+#litige-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pied de page */
+footer {
+    display: flex;
+    justify-content: space-around;
+
+    background: linear-gradient(to top, gainsboro, white);
+}
+
+.social-menu {
+    display: flex;
+}
+
+.social-icon {
+    height: 2rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 35rem) {
+    body {
+        max-width: 100vw;
+    }
+   
+    header {
+        flex-direction: column;
+    }
+    
+    #old-lady-img {
+        max-width: 100%;
+    }
+    
+    #a-vos-cotes-block {
+        max-width: 100%;
+    }
+
+    footer {
+        align-items: center;
+        flex-direction: column;
+    }
+}

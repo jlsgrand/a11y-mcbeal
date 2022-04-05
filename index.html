@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabinet d'avocat Accessibility MacBeal</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section id="skip-links">
+        <h2>Liens d'accès rapide</h2>
         <a href="#main">Accéder au contenu principal</a>
         <a href="#search-input">Accéder au moteur de recherche</a>
     </section>
 
-    <header role="banner">
-        <nav role="navigation">
-            <ul>
+    <header>
+        <nav>
+            <ul class="reset-list">
                 <li><a href="#qui">Qui sommes nous</a></li>
                 <li><a href="#normes">Normes</a></li>
                 <li><a href="#litige">Déclarer un litige</a></li>
@@ -29,46 +32,197 @@
         </form>
     </header>
 
-    <main id="main" role="main">
+    <main id="main">
         <section>
             <h2>Toujours à vos côté</h2>
-            <button>Accessibilité numérique 👩‍🦽</button>
+            <div class="flex-row-block">
+                <div id="old-lady-img">
+                    <img src="assets/old-lady.png" alt="">
+                </div>
+                
+                <div class="flex-column-block" id="a-vos-cotes-block">
+                    <p>Nous vous accompagnons dans vos démarches liées à l'accessibilité numérique. Si vous rencontrez
+                        des
+                        difficultés pour accéder à un site web ou une application mobile, contactez-nous !</p>
+                    <button>Accessibilité numérique 👩‍🦽</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="flex-column-block">
+            <h2>Accessibilité numérique</h2>
+            <p>Les services publics numériques sont encore trop souvent conçus sans prendre en compte l’audience qu’ils
+                servent. Nous mettons à la disposition des administrations des idées et outils pour améliorer
+                l’expérience usager de leurs services.</p>
+            <a href="#table">
+                <img src="assets/wcag-failures.png"
+                    alt="Détails sur les erreurs relatives à l'accessibilité des pages d'accueil">
+            </a>
+            <table id="table">
+                <caption>Erreur les plus répandues en terme d'accessibilité numérique</caption>
+                <thead>
+                    <tr>
+                        <th id="table-errors">Type d'erreur relative aux <span lang="en">Web Content Accessibility
+                                Guidelines</span> sur les pages d'accueil des sites</th>
+                        <th id="table-errors-2022">% en 2022</th>
+                        <th id="table-errors-2021">% en 2021</th>
+                        <th id="table-errors-2020">% en 2020</th>
+                        <th id="table-errors-2019">% en 2019</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="table-errors">Contraste trop faible</td>
+                        <td headers="table-errors-2022">83.9%</td>
+                        <td headers="table-errors-2021">86.4%</td>
+                        <td headers="table-errors-2020">86.3%</td>
+                        <td headers="table-errors-2019">85.3%</td>
+                    </tr>
+                    <tr>
+                        <td headers="table-errors">Images sans alternatives textuelles</td>
+                        <td headers="table-errors-2022">55.4%</td>
+                        <td headers="table-errors-2021">60.6%</td>
+                        <td headers="table-errors-2020">66.0%</td>
+                        <td headers="table-errors-2019">68.0%</td>
+                    </tr>
+                    <tr>
+                        <td headers="table-errors">Liens vides</td>
+                        <td headers="table-errors-2022">50.1%</td>
+                        <td headers="table-errors-2021">51.3%</td>
+                        <td headers="table-errors-2020">59.9%</td>
+                        <td headers="table-errors-2019">58.1%</td>
+                    </tr>
+                    <tr>
+                        <td headers="table-errors">Etiquettes de champ de formulaire manquantes</td>
+                        <td headers="table-errors-2022">46.1%</td>
+                        <td headers="table-errors-2021">54.4%</td>
+                        <td headers="table-errors-2020">53.8%</td>
+                        <td headers="table-errors-2019">52.8%</td>
+                    </tr>
+                    <tr>
+                        <td headers="table-errors">Boutons vides</td>
+                        <td headers="table-errors-2022">27.2%</td>
+                        <td headers="table-errors-2021">26.9%</td>
+                        <td headers="table-errors-2020">28.7%</td>
+                        <td headers="table-errors-2019">25.0%</td>
+                    </tr>
+                    <tr>
+                        <td headers="table-errors">Langue du document manquante</td>
+                        <td headers="table-errors-2022">22.3%</td>
+                        <td headers="table-errors-2021">28.9%</td>
+                        <td headers="table-errors-2020">28.0%</td>
+                        <td headers="table-errors-2019">33.1%</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section id="qui">
             <h2>Qui sommes nous ?</h2>
-            <div class="avocat">
-                <h3>Devon Lane</h3>
-                <q>Bla bla bla</q>
+            <div class="flex-row-block">
+                <div class="avocat flex-column-block">
+                    <h3>Devon Lane</h3>
+                    <img src="assets/law1.jpg" alt="">
+                    <q>Bla bla bla</q>
+                </div>
+                <div class="avocat flex-column-block">
+                    <h3>Leslie Alexander</h3>
+                    <img src="assets/law2.jpg" alt="">
+                    <q>Bla bla bla</q>
+                </div>
+                <div class="avocat flex-column-block">
+                    <h3>Arlene McCoy</h3>
+                    <img src="assets/law3.jpg" alt="">
+                    <q>Bla bla bla</q>
+                </div>
             </div>
-            <div class="avocat">
-                <h3>Leslie Alexander</h3>
-                <q>Bla bla bla</q>
-            </div>
-            <div class="avocat">
-                <h3>Arlene McCoy</h3>
-                <q>Bla bla bla</q>
-            </div>
+
         </section>
 
         <section id="litige">
             <h2>Déclarer un litige</h2>
+            <form id="litige-form">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <div class="form-field">
+                        <label for="nom-input">Nom</label>
+                        <input type="text" id="nom-input" required autocomplete="family-name">
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="prenom-input">Prénom</label>
+                        <input type="text" id="prenom-input" required autocomplete="given-name">
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="email-input">Adresse mail</label>
+                        <input type="text" id="email-input" required autocomplete="email">
+                    </div>
+                </fieldset>
+
+                <fieldset class="flex-row-block">
+                    <legend>Votre utilisation du site</legend>
+                    <div>
+                        <input type="checkbox" id="travail-input-checkbox">
+                        <label for="travail-input-checkbox">pour le travail</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="loisirs-input-checkbox">
+                        <label for="loisirs-input-checkbox">pour les loisirs</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="quotidien-input-checkbox">
+                        <label for="quotidien-input-checkbox">pour le quotidien</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="qqunautre-input-checkbox">
+                        <label for="qqunautre-input-checkbox">pour une autre personne</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Détails de l'incident</legend>
+                    <div class="form-field">
+                        <label for="date-input">Date de l'incident</label>
+                        <input type="date" id="date-input" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="details-input">Détails de l'incident</label>
+                        <textarea id="details-input" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
         <section>
             <h2>Réseaux sociaux</h2>
-            <ul>
-                <li>Facebook</li>
-                <li>LinkedIn</li>
-                <li>Twitter</li>
+            <ul class="reset-list social-menu">
+                <li>
+                    <a href="https://facebook.com">
+                        <img class="social-icon" src="assets/facebook.png" alt="Nous retrouver sur Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com">
+                        <img class="social-icon" src="assets/linkedIn.png" alt="Nous retrouver sur LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com">
+                        <img class="social-icon" src="assets/twitter.png" alt="Nous retrouver sur Twitter">
+                    </a>
+                </li>
             </ul>
         </section>
 
         <section id="normes">
             <h2>Normes et réglementations</h2>
-            <ul>
+            <ul class="reset-list">
                 <li><a href="https://www.w3.org/TR/WCAG21/">WCAG (lien externe)</a></li>
                 <li><a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">RGAA (lien externe)</a>
                 </li>
