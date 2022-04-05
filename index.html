@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet d'avocat Accessibility MacBeal</title>
+</head>
+
+<body>
+    <section id="skip-links">
+        <a href="#main">Accéder au contenu principal</a>
+        <a href="#search-input">Accéder au moteur de recherche</a>
+    </section>
+
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="#qui">Qui sommes nous</a></li>
+                <li><a href="#normes">Normes</a></li>
+                <li><a href="#litige">Déclarer un litige</a></li>
+            </ul>
+        </nav>
+        <h1><span lang="en">Accessibility MacBeal</span></h1>
+        <form role="search">
+            <input id="search-input" type="text" placeholder="Rechercher">
+            <button type="submit" title="Rechercher sur le site">🔎</button>
+        </form>
+    </header>
+
+    <main id="main" role="main">
+        <section>
+            <h2>Toujours à vos côté</h2>
+            <button>Accessibilité numérique 👩‍🦽</button>
+        </section>
+
+        <section id="qui">
+            <h2>Qui sommes nous ?</h2>
+            <div class="avocat">
+                <h3>Devon Lane</h3>
+                <q>Bla bla bla</q>
+            </div>
+            <div class="avocat">
+                <h3>Leslie Alexander</h3>
+                <q>Bla bla bla</q>
+            </div>
+            <div class="avocat">
+                <h3>Arlene McCoy</h3>
+                <q>Bla bla bla</q>
+            </div>
+        </section>
+
+        <section id="litige">
+            <h2>Déclarer un litige</h2>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <section>
+            <h2>Réseaux sociaux</h2>
+            <ul>
+                <li>Facebook</li>
+                <li>LinkedIn</li>
+                <li>Twitter</li>
+            </ul>
+        </section>
+
+        <section id="normes">
+            <h2>Normes et réglementations</h2>
+            <ul>
+                <li><a href="https://www.w3.org/TR/WCAG21/">WCAG (lien externe)</a></li>
+                <li><a href="https://www.numerique.gouv.fr/publications/rgaa-accessibilite/">RGAA (lien externe)</a>
+                </li>
+                <li><a href="https://accessuse.eu/fr/ETSI-norme.html">EN-301549 (lien externe)</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>
